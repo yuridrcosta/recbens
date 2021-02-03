@@ -136,6 +136,7 @@ class Model:
 		for i in range(len(sentences_text[pos])):
 			ev = (text_in_sequences[pos][i],idx2tag[p[0][i]])
 			sequence_evaluated.append(ev)
+		return sequence_evaluated
 
 
 	# Given a text, the word dictionary and the class reverse dictionary, this functions returns a list with the classification
